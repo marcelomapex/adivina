@@ -1,0 +1,85 @@
+
+
+<meta charset="UTF-8">
+
+<h1>Programa para jugar adivinando</h1>
+
+
+<script>
+
+	function saltarLinea() {
+    	document.write("<br>");
+    	document.write("<br>");
+    	
+} 
+
+	function imprimir(frase) {
+    
+   		document.write(frase);
+    	saltarLinea();
+}	
+
+
+
+var numeroPensado=Math.round(Math.random()*10);
+var intentos = 3;
+var contador = 1;
+
+
+	
+	while(contador <= intentos){
+
+		var numeroIngresado=  parseInt(prompt("Ingrese un numero entre 0-10"));
+		
+
+			if (numeroPensado == numeroIngresado) {
+
+				alert("Ud. acertó en el intento " + contador + ". El numero adivinado es :" + numeroPensado);
+				break;
+
+			}
+
+
+			else {
+
+				alert("Ud. NO acertó. ");
+				if(contador==intentos){
+
+					imprimir("El numero era: " + numeroPensado + ". Numero de intentos agotados. Suerte la proxima vez!")
+				}
+			}
+
+		
+		contador++
+	}	
+
+
+		
+	imprimir("FIN.")
+
+
+	
+		
+
+
+
+
+
+	
+
+
+
+	
+
+	
+
+	
+</script>
+
+<a href="https://marcelomapex.github.io/adivina/"> 
+	<h2>INTENTALO DE NUEVO!</h2>
+</a>
+
+
+
+
